@@ -1,0 +1,37 @@
+.rounded-div {
+  @apply flex items-center justify-between h-20 font-bold;
+
+  .cryptobase {
+    @apply text-2xl;
+  }
+
+  .toggle {
+    @apply hidden md:block;
+  }
+
+  .sign {
+    @apply hidden md:block;
+  }
+  .signin {
+    @apply hover:text-accent p-4;
+  }
+
+  .signup {
+    @apply bg-button text-btnText px-5 py-2 rounded-2xl shadow-lg hover:shadow-2xl ml-2;
+  }
+
+  .menu {
+    @apply block md:hidden z-10;
+  }
+
+  .mobile-menu {
+    @apply md:hidden fixed flex flex-col justify-between h-[90%] left-0 top-20 items-center bg-primary w-full ease-in duration-300 z-10;
+  }
+
+  .list-container {
+    @apply w-full py-6;
+  }
+  .list {
+    @apply border-b;
+  }
+}

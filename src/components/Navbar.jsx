@@ -2,33 +2,38 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { AiOutlineMenu } from "react-icons/ai";
+import "../styles/componentStyles/Navbar.scss";
 
 function Navbar() {
   return (
     <div className="rounded-div">
       <Link to="/">
-        <h1>Cryptobase</h1>
+        <h1 className="cryptobase">Cryptobase</h1>
       </Link>
-      <div>
+      <div className="toggle">
         <ThemeToggle />
       </div>
-      <div>
-        <Link to="signin">Sign in</Link>
-        <Link to="signup">Sign up</Link>
+      <div className="sign">
+        <Link to="signin" className="signin">
+          Sign in
+        </Link>
+        <Link to="signup" className="signup">
+          Sign up
+        </Link>
       </div>
       {/*menu icon */}
-      <div>
+      <div className="menu">
         <AiOutlineMenu />
       </div>
 
       {/* mobile menu */}
 
-      <div>
-        <ul>
-          <li>
+      <div className="mobile-menu">
+        <ul className="list-container">
+          <li className="list">
             <Link to="/">Home</Link>{" "}
           </li>
-          <li>
+          <li className="list">
             <Link to="/">Account</Link>{" "}
           </li>
           <li>
