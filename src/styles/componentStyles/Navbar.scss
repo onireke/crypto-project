@@ -29,9 +29,21 @@
   }
 
   .list-container {
-    @apply w-full py-6;
+    @apply w-full py-6 px-2;
   }
   .list {
-    @apply border-b;
+    @apply border-b py-2;
+  }
+
+  .sign-div {
+    @apply w-full flex flex-col p-4;
+
+    .mobile-signin {
+      @apply w-full my-2 p-3 bg-primary text-primary border-secondary rounded-2xl shadow-xl;
+    }
+
+    .mobile-signup {
+      @apply w-full my-2 p-3 bg-button text-btnText rounded-2xl border-secondary shadow-xl;
+    }
   }
 }
