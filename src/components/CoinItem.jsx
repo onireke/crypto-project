@@ -26,7 +26,6 @@ function CoinItem({ coin }) {
           </Sparklines>
         </td> */}
       </tr>
-      sdfghjklrtyuio
     </div>
   );
 }
