@@ -2,30 +2,31 @@ import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
 
 function CoinItem({ coin }) {
+  console.log(coin);
   return (
-    <div>
-      <tr>
+    <div className="w-full">
+      <tr className="w-full">
         <td>
           <AiOutlineStar />
         </td>
-        <td>{coin.market_cap_rank}</td>
+        <td>{coin.rank}</td>
         <td>
           <div>
-            <img src={coin.image} alt={coin.id} />
             <p>{coin.name}</p>
           </div>
         </td>
         <td>{coin.symbol}</td>
-        <td>{coin.current.price}</td>
-        <td>{coin.price_change_percentage_24h}</td>
-        <td>{coin.total_volume}</td>
-        <td>{coin.market.cap}</td>
-        <td>
-          <Sparklines data={coin.Sparklines_in_7d.price}>
+        <td>{coin.quotes.USD.price}</td>
+        <td>{coin.quotes.USD.percent_change_24h}</td>
+        <td>{coin.quotes.USD.volume_24h}</td>
+        <td>{coin.quotes.USD.market_cap}</td>
+        {/* <td>
+          <Sparklines data={coin.quotes.USD.percent_change_7d}>
             <SparklinesLines color="teal" />
           </Sparklines>
-        </td>
+        </td> */}
       </tr>
+      sdfghjklrtyuio
     </div>
   );
 }

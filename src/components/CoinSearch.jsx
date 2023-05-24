@@ -12,7 +12,7 @@ function CoinSearch({ coins }) {
         </form>
       </div>
 
-      <table>
+      <table className="w-full">
         <thead>
           <tr>
             <th></th>

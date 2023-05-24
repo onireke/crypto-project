@@ -763,6 +763,11 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+d3@^3.5.6:
+  version "3.5.17"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-3.5.17.tgz#bc46748004378b21a360c9fc7cf5231790762fb8"
+  integrity sha512-yFk/2idb8OHPKkbAL8QaOaqENNoMhIaSHZerk3oQsECwkObkCpJyjYwCe+OHiq6UEdhe1m8ZGARRRO3ljFjlKg==
+
 debug@^4.1.0, debug@^4.1.1, debug@^4.3.2:
   version "4.3.4"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
@@ -1924,6 +1929,13 @@ react-router@6.11.1:
   integrity sha512-OZINSdjJ2WgvAi7hgNLazrEV8SGn6xrKA+MkJe9wVDMZ3zQ6fdJocUjpCUCI0cNrelWjcvon0S/QK/j0NzL3KA==
   dependencies:
     "@remix-run/router" "1.6.1"
+
+react-sparkline@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-sparkline/-/react-sparkline-2.0.0.tgz#2a2de9590010bcf339fa3d52c0c16f9dd90dd395"
+  integrity sha512-CBtkW+OopYedCqPpTfZqE55g8UHbF98fOCib0S7jB7GWqqA+hCxsY1MJXCcpRqX6+aX/FIM6t3DVi36DfvBV/g==
+  dependencies:
+    d3 "^3.5.6"
 
 react@^18.2.0:
   version "18.2.0"
