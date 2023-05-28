@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineStar } from "react-icons/ai";
 import { useState } from "react";
 
 import CoinItem from "./CoinItem";
@@ -35,15 +34,17 @@ function CoinSearch({ coins }) {
         </thead>
         <tbody>
           {coins
-            // .filter((value) => {
-            //   if (searchText === "") {
-            //     return value;
-            //   } else if (
-            //     value.toLowerCase().includes(searchText.toLocaleLowerCase())
-            //   ) {
-            //     return value;
-            //   }
-            // })
+            .filter((value) => {
+              if (searchText === "") {
+                return value;
+              } else if (
+                value.name
+                  .toLowerCase()
+                  .includes(searchText.toLocaleLowerCase())
+              ) {
+                return value;
+              }
+            })
             .map((coin) => (
               <CoinItem key={coin.id} coin={coin} />
             ))}
