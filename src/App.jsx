@@ -32,6 +32,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Account />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </ThemeProvider>
   );
