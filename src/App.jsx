@@ -34,6 +34,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/account" element={<Account />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </ThemeProvider>
   );
